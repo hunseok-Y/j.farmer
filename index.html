@@ -29,112 +29,111 @@
       </div>
 
 
-      <div class="header__rigthMenu">
-        <ul class="rigthMenu__menu">
-          <li>
-            <a href="/">LOGIN</a>
+      <div class="header__user-menu">
+
+        <ul class="user-menu">
+          <li class="user-menu__item">
+            <a href="/" class="anchor">LOGIN</a>
           </li>
 
-          <li>
-            <a href="/">MYPAGE</a>
+          <li class="user-menu__item">
+            <a href="/" class="anchor">MYPAGE</a>
           </li>
 
-          <li>
-            <a href="/">CART</a>
+          <li class="user-menu__item">
+            <a href="/" class="anchor">CART</a>
           </li>
         </ul>
 
         <div class="header__search">
-          <input type="text">
-          <div class="material-icons">search</div>
+          <input type="text" class="search--input">
+          <div class="material-icons search--icon">search</div>
         </div>
       </div>
 
       <div class="header__nav">
-        <nav class="nav">
 
-          <ul class="nav__menu">
-            <li class="menu__item">
-              <div class="item__name">
-                <h4><a href="/">농산물</a></h4>
-              </div>
-              <ul class="item__content">
-                <li><a href="/">과일</a></li>
-                <li><a href="/">채소</a></li>
-                <li><a href="/">잡곡류</a></li>
-                <li><a href="/">견과류</a></li>
-              </ul>
-            </li>
+        <ul class="nav-menu">
+          <li class="nav-menu__item">
+            <div class="item__name">
+              <h4><a href="/" class="name">농산물</a></h4>
+            </div>
+            <ul class="item__content">
+              <li><a href="/" class="Subtitle">과일</a></li>
+              <li><a href="/" class="Subtitle">채소</a></li>
+              <li><a href="/" class="Subtitle">잡곡류</a></li>
+              <li><a href="/" class="Subtitle">견과류</a></li>
+            </ul>
+          </li>
 
-            <li class="menu__item">
-              <div class="item__name">
-                <h4><a href="/">수산물</a></h4>
-              </div>
-              <ul class="item__content">
-                <li><a href="/">해산물</a></li>
-                <li><a href="/">생선</a></li>
-                <li><a href="/">건어물</a></li>
-                <li><a href="/">김/해초</a></li>
-              </ul>
-            </li>
+          <li class="nav-menu__item">
+            <div class="item__name">
+              <h4><a href="/" class="name">수산물</a></h4>
+            </div>
+            <ul class="item__content">
+              <li><a href="/" class="Subtitle">해산물</a></li>
+              <li><a href="/" class="Subtitle">생선</a></li>
+              <li><a href="/" class="Subtitle">건어물</a></li>
+              <li><a href="/" class="Subtitle">김/해초</a></li>
+            </ul>
+          </li>
 
-            <li class="menu__item">
-              <div class="item__name">
-                <h4><a href="/">축산물</a></h4>
-              </div>
-              <ul class="item__content">
-                <li><a href="/">돼지고기</a></li>
-                <li><a href="/">소고기</a></li>
-                <li><a href="/">닭고기</a></li>
-              </ul>
-            </li>
+          <li class="nav-menu__item">
+            <div class="item__name">
+              <h4><a href="/" class="name">축산물</a></h4>
+            </div>
+            <ul class="item__content">
+              <li><a href="/" class="Subtitle">돼지고기</a></li>
+              <li><a href="/" class="Subtitle">소고기</a></li>
+              <li><a href="/" class="Subtitle">닭고기</a></li>
+            </ul>
+          </li>
 
-            <li class="menu__item">
-              <div class="item__name">
-                <h4><a href="/">밀키트</a></h4>
-              </div>
-            </li>
+          <li class="nav-menu__item">
+            <div class="item__name">
+              <h4><a href="/" class="name">밀키트</a></h4>
+            </div>
+          </li>
 
-            <li class="menu__item">
-              <div class="item__name">
-                <h4><a href="/">공지사항</a></h4>
-              </div>
-            </li>
+          <li class="nav-menu__item">
+            <div class="item__name">
+              <h4><a href="/" class="name">공지사항</a></h4>
+            </div>
+          </li>
 
-            <li class="menu__item">
-              <div class="item__name">
-                <h4><a href="/">커뮤니티</a></h4>
-              </div>
-              <ul class="item__content">
-                <li><a href="/">후기</a></li>
-                <li><a href="/">Q&A</a></li>
-                <li><a href="/">이벤트</a></li>
-              </ul>
-            </li>
-          </ul>
+          <li class="nav-menu__item">
+            <div class="item__name">
+              <h4><a href="/" class="name">커뮤니티</a></h4>
+            </div>
+            <ul class="item__content">
+              <li><a href="/" class="Subtitle">후기</a></li>
+              <li><a href="/" class="Subtitle">Q&A</a></li>
+              <li><a href="/" class="Subtitle">이벤트</a></li>
+            </ul>
+          </li>
+        </ul>
 
-        </nav>
       </div>
 
     </div>
   </header>
 
   <!-- MAIN -->
-  <section class="main">
+  <main>
 
     <!-- VISUAL -->
     <section class="visual ">
 
       <div class="inner">
-        <ul class="visual__item">
-          <li>
-            <a href="/"><img src="./image/event.1.png" alt="메인 이벤트 베너"></a>
+        <ul class="visual__banner">
+          <li class="banner">
+            <a href="/"><img src="./image/event.1.png" alt="메인 이벤트 베너" class="banner__image"></a>
             <button class="btn btn--white"><a>자세히 보기</a></button>
           </li>
         </ul>
 
-        <ul class="visual__item">
-          <li>
+        <ul class="visual__banner">
+          <li class="banner">
             <a href="/"><img src="./image/event.2.png" alt="메인 이벤트 베너"></a>
             <button class="btn btn--white"><a>자세히 보기</a></button>
           </li>
@@ -155,40 +154,40 @@
 
 
         <div class="about__title">
-          <h1>이달의 제철상품</h1>
-          <p>재배기간 중 가장 맛있는 시기에 수확한<br>
+          <h1 class="tit">이달의 제철상품</h1>
+          <p class="text">재배기간 중 가장 맛있는 시기에 수확한<br>
             신선하고 맛있는 제철상품을 만나보세요. </p>
           <button class="btn btn--black">자세히 보기</button>
         </div>
 
         <div class="about__main">
-          <img src="./image/about1.png" alt="제철상품__레몬">
+          <img src="./image/about1.png" alt="제철상품__레몬" class="main__image">
           <button class="btn btn--black"><a>자세히 보기</a></button>
         </div>
 
         <div class="about__product">
 
           <div class="product__item">
-            <img src="./image/main__item1.jpg" alt="">
-            <div class="item__description">
-              <div class="item__name">수박 1kg (무게별 가격 변동)</div>
-              <div class="item__price">20,000원</div>
+            <img src="./image/main__item1.jpg" alt="" class="product__image">
+            <div class="product__description">
+              <div class="name">수박 1kg (무게별 가격 변동)</div>
+              <div class="price">20,000원</div>
             </div>
           </div>
 
           <div class="product__item">
             <img src="./image/main__item2.jpg" alt="">
-            <div class="item__description">
-              <div class="item__name">레몬 1kg당</div>
-              <div class="item__price">20,000원</div>
+            <div class="product__description">
+              <div class="name">레몬 1kg당</div>
+              <div class="price">20,000원</div>
             </div>
           </div>
 
           <div class="product__item">
             <img src="./image/main__item3.jpg" alt="">
-            <div class="item__descriptiom">
-              <div class="item__name">제주감귤 3kg (무게별 가격 변동)</div>
-              <div class="item__price">15,000원</div>
+            <div class="product__description">
+              <div class="name">제주감귤 3kg (무게별 가격 변동)</div>
+              <div class="price">15,000원</div>
             </div>
           </div>
 
@@ -200,12 +199,12 @@
     </section>
 
     <!-- MD PICK -->
-    <section class="mdpick section">
+    <section class="md-pick section">
 
       <div class="inner">
         <div class="mdpick__title">
-          <h1>MD PICK</h1>
-          <P>J. FARMER가 추천하는 상품을<br>
+          <h1 class="tit">MD PICK</h1>
+          <P class="text">J. FARMER가 추천하는 상품을<br>
             만나보세요</P>
         </div>
 
@@ -227,53 +226,53 @@
           </button>
         </div>
 
-        <ul class="mdpick__product">
-          <li>
-            <a href="" class="mdpick__item" target="blank" data-type="농산물">
-              <img src="./image/main__item1.jpg" alt="">
+        <ul class="md-pick__product">
+          <li class="product">
+            <a href="" class="product__item" target="blank" data-type="농산물">
+              <img src="./image/main__item1.jpg" alt="" class="product__image">
 
-              <p class="mdpick__percent">10%</p>
+              <p class="product__percent">10%</p>
 
-              <ul class="mdpick__description">
-                <li class="mdpick__name">수박 1kg (무게별 가격 변동)</li>
-                <li class="mdpick__price">20,000원</li>
-                <li class="mdpick__discount">22,000원</li>
+              <ul class="product__description">
+                <li class="product__name">수박 1kg (무게별 가격 변동)</li>
+                <li class="product__price">20,000원</li>
+                <li class="product__discount">22,000원</li>
               </ul>
             </a>
           </li>
 
-          <li>
-            <a href="" class="mdpick__item" target="blank" data-type="농산물">
-              <img src="./image/main__item2.jpg" alt="">
-              <div class="mdpick__percent">10%</div>
-              <div class="mdpick__description">
-                <div class="mdpick__name">레몬 1kg</div>
-                <div class="mdpick__price">20,000원</div>
-                <div class="mdpick__discount">22,000원</div>
+          <li class="product">
+            <a href="" class="product__item" target="blank" data-type="농산물">
+              <img src="./image/main__item2.jpg" alt="" class="product__image">
+              <div class="product__percent">10%</div>
+              <div class="product__description">
+                <div class="product__name">레몬 1kg</div>
+                <div class="product__price">20,000원</div>
+                <div class="product__discount">22,000원</div>
               </div>
             </a>
           </li>
 
           <li>
-            <a href="" class="mdpick__item" target="blank" data-type="농산물">
-              <img src="./image/main__item3.jpg" alt="">
-              <div class="mdpick__percent">10%</div>
-              <div class="mdpick__description">
-                <div class="mdpick__name">제주감귤</div>
-                <div class="mdpick__price">20,000원</div>
-                <div class="mdpick__discount">22,000원</div>
+            <a href="" class="product__item" target="blank" data-type="농산물">
+              <img src="./image/main__item3.jpg" alt="" class="product__image">
+              <div class="product__percent">10%</div>
+              <div class="product__description">
+                <div class="product__name">제주감귤</div>
+                <div class="product__price">20,000원</div>
+                <div class="product__discount">22,000원</div>
               </div>
             </a>
           </li>
 
           <li>
-            <a href="" class="mdpick__item" target="blank" data-type="농산물">
-              <img src="./image/main__item3.jpg" alt="">
-              <div class="discount__percent">10%</div>
-              <div class="mdpick__description">
-                <div class="mdpick__name">제주감귤</div>
-                <div class="mdpick__price">20,000원</div>
-                <div class="mdpick__discount">22,000원</div>
+            <a href="" class="product__item" target="blank" data-type="농산물">
+              <img src="./image/main__item3.jpg" alt="" class="product__image">
+              <div class="product__percent">10%</div>
+              <div class="product__description">
+                <div class="product__name">제주감귤</div>
+                <div class="product__price">20,000원</div>
+                <div class="product__discount">22,000원</div>
               </div>
             </a>
           </li>
@@ -289,8 +288,8 @@
 
       <div class="inner">
         <div class="brand__title">
-          <h1>J. farmer</h1>
-          <p>저희는 제주에서 살고있는 모든 농민들의<br>
+          <h1 class="tit">J. farmer</h1>
+          <p class="text">저희는 제주에서 살고있는 모든 농민들의<br>
             노고를 올바르게 전달하는 회사입니다. </p>
           <button class="btn btn--white">자세히 보기</button>
         </div>
@@ -303,8 +302,8 @@
 
       <div class="inner">
         <div class="mealkit__title">
-          <h1>제주 맛집을 품다</h1>
-          <p>제주도에서만 먹을 수 있었던 맛집을 이젠 밀키트로<br>
+          <h1 class="tit">제주 맛집을 품다</h1>
+          <p class="text">제주도에서만 먹을 수 있었던 맛집을 이젠 밀키트로<br>
             가정에서 느껴보세요.</p>
           <div class="btn btn--white">자세히 보기</div>
         </div>
@@ -317,200 +316,197 @@
 
       <div class="inner">
 
-        <div class="review__container">
-          <h1>RIVIEW</h1>
+        <h1 class="tit">RIVIEW</h1>
 
-          <ul class="review__item">
+        <ul class="review__groups">
 
-            <li class="review__item">
-              <a href="/">
-                <img src="./image/leview.jpg" alt="">
-                <div class="texe__area">
-                  <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
-                  <p class="day">20.8.10</p>
-                  <p class="id">닉네임: ****</p>
-                  <hr class="line">
-                  <p class="itemName">상품명</p>
-              </a>
-            </li>
+          <li class="review__group">
+            <a href="/" class="group__item">
+              <img src="./image/leview.jpg" alt="">
+              <div class="group__texe-area">
+                <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
+                <p class="day">20.8.10</p>
+                <p class="id">닉네임: ****</p>
+                <hr class="line">
+                <p class="itemName">상품명</p>
+            </a>
+          </li>
 
-              <li class="review__item">
-                <a href="/">
-                  <img src="./image/leview.jpg" alt="">
-                  <div class="texe__area">
-                    <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
-                    <p class="day">20.8.10</p>
-                    <p class="id">닉네임: ****</p>
-                    <hr class="line">
-                    <p class="itemName">상품명</p>
-                  </div>
-                </a>
-              </li>
+          <li class="review__group">
+            <a href="/" class="group__item">
+              <img src="./image/leview.jpg" alt="">
+              <div class="group__texe-area">
+                <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
+                <p class="day">20.8.10</p>
+                <p class="id">닉네임: ****</p>
+                <hr class="line">
+                <p class="itemName">상품명</p>
+              </div>
+            </a>
+          </li>
 
-              <li class="review__item">
-                <a href="/">
-                  <img src="./image/leview.jpg" alt="">
-                  <div class="texe__area">
-                    <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
-                    <p class="day">20.8.10</p>
-                    <p class="id">닉네임: ****</p>
-                    <hr class="line">
-                    <p class="itemName">상품명</p>
-                  </div>
-                </a>
-              </li>
+          <li class="review__group">
+            <a href="/" class="group__item">
+              <img src="./image/leview.jpg" alt="">
+              <div class="group__texe-area">
+                <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
+                <p class="day">20.8.10</p>
+                <p class="id">닉네임: ****</p>
+                <hr class="line">
+                <p class="itemName">상품명</p>
+              </div>
+            </a>
+          </li>
 
-              <li class="review__item">
-                <a href="/">
-                  <img src="./image/leview.jpg" alt="">
-                  <div class="texe__area">
-                    <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
-                    <p class="day">20.8.10</p>
-                    <p class="id">닉네임: ****</p>
-                    <hr class="line">
-                    <p class="itemName">상품명</p>
-                  </div>
-                </a>
-              </li>
+          <li class="review__group">
+            <a href="/" class="group__item">
+              <img src="./image/leview.jpg" alt="">
+              <div class="group__texe-area">
+                <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
+                <p class="day">20.8.10</p>
+                <p class="id">닉네임: ****</p>
+                <hr class="line">
+                <p class="itemName">상품명</p>
+              </div>
+            </a>
+          </li>
 
-              <li class="review__item">
-                <a href="/">
-                  <img src="./image/leview.jpg" alt="">
-                  <div class="texe__area">
-                    <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
-                    <p class="day">20.8.10</p>
-                    <p class="id">닉네임: ****</p>
-                    <hr class="line">
-                    <p class="itemName">상품명</p>
-                  </div>
-                </a>
-              </li>
+          <li class="review__group">
+            <a href="/" class="group__item">
+              <img src="./image/leview.jpg" alt="">
+              <div class="group__texe-area">
+                <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
+                <p class="day">20.8.10</p>
+                <p class="id">닉네임: ****</p>
+                <hr class="line">
+                <p class="itemName">상품명</p>
+              </div>
+            </a>
+          </li>
 
-              <li class="review__item">
-                <a href="/">
-                  <img src="./image/leview.jpg" alt="">
-                  <div class="texe__area">
-                    <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
-                    <p class="day">20.8.10</p>
-                    <p class="id">닉네임: ****</p>
-                    <hr class="line">
-                    <p class="itemName">상품명</p>
-                  </div>
-                </a>
-              </li>
+          <li class="review__group">
+            <a href="/" class="group__item">
+              <img src="./image/leview.jpg" alt="">
+              <div class="group__texe-area">
+                <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
+                <p class="day">20.8.10</p>
+                <p class="id">닉네임: ****</p>
+                <hr class="line">
+                <p class="itemName">상품명</p>
+              </div>
+            </a>
+          </li>
 
-              <li class="review__item">
-                <a href="/">
-                  <img src="./image/leview.jpg" alt="">
-                  <div class="texe__area">
-                    <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
-                    <p class="day">20.8.10</p>
-                    <p class="id">닉네임: ****</p>
-                    <hr class="line">
-                    <p class="itemName">상품명</p>
-                  </div>
-                </a>
-              </li>
+          <li class="review__group">
+            <a href="/" class="group__item">
+              <img src="./image/leview.jpg" alt="">
+              <div class="group__texe-area">
+                <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
+                <p class="day">20.8.10</p>
+                <p class="id">닉네임: ****</p>
+                <hr class="line">
+                <p class="itemName">상품명</p>
+              </div>
+            </a>
+          </li>
 
-              <li class="review__item">
-                <a href="/">
-                  <img src="./image/leview.jpg" alt="">
-                  <div class="texe__area">
-                    <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
-                    <p class="day">20.8.10</p>
-                    <p class="id">닉네임: ****</p>
-                    <hr class="line">
-                    <p class="itemName">상품명</p>
-                  </div>
-                </a>
-              </li>
+          <li class="review__group">
+            <a href="/" class="group__item">
+              <img src="./image/leview.jpg" alt="">
+              <div class="group__texe-area">
+                <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
+                <p class="day">20.8.10</p>
+                <p class="id">닉네임: ****</p>
+                <hr class="line">
+                <p class="item-name">상품명</p>
+              </div>
+            </a>
+          </li>
 
-        </div>
-
-        <button class="btn btn--black">더보기</button>
+          <button class="btn btn--black">더보기</button>
 
       </div>
 
     </section>
 
-  </div>
+    </div>
 
-  <!-- FOOTER -->
+    <!-- FOOTER -->
 
-  <footer>
+    <footer>
 
-    <div class="inner">
+      <div class="inner">
 
-      <ul class="ft__menu">
-        <li><a href="/">회사소개</a></li>
-        <li><a href="/">이용약관</a></li>
-        <li><a href="/">개인정보취급방침</a></li>
-        <li><a href="/">이용안내</a></li>
-      </ul>
+        <ul class="footer__menu">
+          <li class="footer__item"><a href="/">회사소개</a></li>
+          <li class="footer__item"><a href="/">이용약관</a></li>
+          <li class="footer__item"><a href="/">개인정보취급방침</a></li>
+          <li class="footer__item"><a href="/">이용안내</a></li>
+        </ul>
 
-      <hr class="line">
+        <hr class="line">
 
-      <div class="ft__con">
+        <div class="footer__con">
 
-        <div class="con con01">
-          <p class="tit">
-            고객센터
-          </p>
-          <hr class="line">
-          <div class="number">1644-1644</div>
-          <div>평일 10:00 ~ 18:00</div>
-          <div>주말, 공휴일</div>
-        </div>
-
-        <div class="con con02">
-          <p class="tit">
-            계좌정보
-          </p>
-          <hr class="line">
-          <div class="con2__info">
-            <div>국민 : 1234 - 12 - 1234</div>
-            <div>예금주:홍길동</div>
-          </div>
-        </div>
-
-
-        <div class="con con03">
-          <p class="tit">
-            SMS
-          </p>
-          <hr class="line">
-          <div class="con3__icon">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
+          <div class="con__service">
+            <p class="service__tit">고객센터</p>
+            <hr class="line">
+            <div class="service__info">
+              <div class="number">1644-1644</div>
+              <p class="time">평일 10:00 ~ 18:00</p>
+              <p class="day">주말, 공휴일</p>
+            </div>
           </div>
 
+          <div class="con__bank">
+            <p class="bank__tit">
+              계좌정보
+            </p>
+            <hr class="line">
+            <div class="bank__info">
+              <div class="numer">국민 : 1234 - 12 - 1234</div>
+              <div class="name">예금주:홍길동</div>
+            </div>
+          </div>
+
+
+          <div class="con__sns">
+            <p class="sns__tit">
+              SMS
+            </p>
+            <hr class="line">
+            <div class="con3__icon">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+
+          </div>
+
         </div>
+
+        <hr class="line">
+
+        <div class="con__info">
+          <b>회사명 : J.FARMER</b>
+          <b>대표명 : 홍길동</b>
+          <b>고객센터 1644 - 1644</b>
+          <b>사업자 등록번호 : 12345-12345</b>
+          <b>통신판매업 신고번호 : 1234-1234</b>
+          <b>이메일 : jfarmer@naver.com</b>
+          <b>주소 : 제주특별자치도 제주시 제주시</b>
+
+        </div>
+      </div>
 
       </div>
 
-      <hr class="line">
+    </footer>
 
-      <div class="con__info">
-        <b>회사명 : J.FARMER</b>
-        <b>대표명 : 홍길동</b>
-        <b>고객센터 1644 - 1644</b>
-        <b>사업자 등록번호 : 12345-12345</b>
-        <b>통신판매업 신고번호 : 1234-1234</b>
-        <b>이메일 : jfarmer@naver.com</b>
-        <b>주소 : 제주특별자치도 제주시 제주시</b>
+    <!-- ARROW UP -->
+    <button class="topup">
+      <i class="fas fa-arrow-up"> TOP</i>
+    </button>
 
-      </div>
-    </div>
-
-    </div>
-
-  </footer>
-
-  <!-- ARROW UP -->
-  <button class="topup">
-    <i class="fas fa-arrow-up"> TOP</i>
-  </button>
-  
 </body>
 
 </html>
