@@ -23,7 +23,7 @@
   <header class="header">
     <div class="inner">
 
-      <div class="header__logo">
+      <div class="header__logo logo">
         <a href="" class="logo__image"><img src="./image/J. FARMER logo.png" alt="JFARMER"></a>
         <span class="logo__text"><a>J. farmer</a></span>
       </div>
@@ -127,22 +127,22 @@
       <div class="inner">
 
         <ul class="visual__banner">
+          
           <li class="banner">
             <a href="/"><img src="./image/event.1.png" alt="메인 이벤트 베너" class="banner__image"></a>
             <button class="btn btn--white"><a>자세히 보기</a></button>
           </li>
-        </ul>
 
-        <ul class="visual__banner">
           <li class="banner">
             <a href="/"><img src="./image/event.2.png" alt="메인 이벤트 베너" class="banner__image"></a>
             <button class="btn btn--white"><a>자세히 보기</a></button>
           </li>
+
         </ul>
 
         <div class="btn__container">
-          <button class="visBtn visual__btn-1"></button>
-          <button class="visBtn visual__btn-2"></button>
+          <button type="button" class="visBtn visual__btn-1"></button>
+          <button type="button" class="visBtn visual__btn-2"></button>
         </div>
       </div>
 
@@ -293,7 +293,7 @@
           <h1 class="tit">J. farmer</h1>
           <p class="text">저희는 제주에서 살고있는 모든 농민들의<br>
             노고를 올바르게 전달하는 회사입니다. </p>
-          <button class="btn btn--white"><a href="#" class="brand__link">자세히 보기</a></button>
+          <a href="#" class="brand__link btn btn--white">자세히 보기</a>
         </div>
       </div>
 
@@ -307,7 +307,7 @@
           <h1 class="tit">제주 맛집을 품다</h1>
           <p class="text">제주도에서만 먹을 수 있었던 맛집을 이젠 밀키트로<br>
             가정에서 느껴보세요.</p>
-          <button class="btn btn--white"><a href="#" class="mealkit__link">자세히 보기</a></button>
+          <a href="#" class="mealkit__link btn btn--white">자세히 보기</a>
         </div>
       </div>
 
@@ -329,7 +329,6 @@
                 <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
                 <p class="day">20.8.10</p>
                 <p class="id">닉네임: ****</p>
-                <hr class="line">
                 <p class="itemName">상품명</p>
               </div>
             </a>
@@ -342,7 +341,6 @@
                 <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
                 <p class="day">20.8.10</p>
                 <p class="id">닉네임: ****</p>
-                <hr class="line">
                 <p class="itemName">상품명</p>
               </div>
             </a>
@@ -355,7 +353,6 @@
                 <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
                 <p class="day">20.8.10</p>
                 <p class="id">닉네임: ****</p>
-                <hr class="line">
                 <p class="itemName">상품명</p>
               </div>
             </a>
@@ -368,7 +365,6 @@
                 <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
                 <p class="day">20.8.10</p>
                 <p class="id">닉네임: ****</p>
-                <hr class="line">
                 <p class="itemName">상품명</p>
               </div>
             </a>
@@ -381,7 +377,6 @@
                 <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
                 <p class="day">20.8.10</p>
                 <p class="id">닉네임: ****</p>
-                <hr class="line">
                 <p class="itemName">상품명</p>
               </div>
             </a>
@@ -394,7 +389,6 @@
                 <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
                 <p class="day">20.8.10</p>
                 <p class="id">닉네임: ****</p>
-                <hr class="line">
                 <p class="itemName">상품명</p>
               </div>
             </a>
@@ -407,7 +401,6 @@
                 <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
                 <p class="day">20.8.10</p>
                 <p class="id">닉네임: ****</p>
-                <hr class="line">
                 <p class="itemName">상품명</p>
               </div>
             </a>
@@ -420,13 +413,12 @@
                 <p class="subject">상품받았는데 물건이 너무 만족스럽습니다.</p>
                 <p class="day">20.8.10</p>
                 <p class="id">닉네임: ****</p>
-                <hr class="line">
                 <p class="item-name">상품명</p>
               </div>
             </a>
           </li>
 
-          <button class="btn btn--black">더보기</button>
+          <a class="review__btn btn btn--black">더보기</a>
 
       </div>
 
@@ -447,37 +439,32 @@
           <li class="footer__item"><a href="/">이용안내</a></li>
         </ul>
 
-        <hr class="line">
-
         <div class="footer__con">
 
-          <div class="con__service">
-            <p class="service__tit">고객센터</p>
-            <hr class="line">
-            <div class="service__text-area">
+          <dl class="con__service">
+            <dt class="service__tit">고객센터</dt>
+            <dd class="service__text-area">
               <h2 class="number">1644-1644</h2>
               <p class="time">평일 10:00 ~ 18:00</p>
               <p class="day">주말, 공휴일</p>
-            </div>
-          </div>
+            </dd>
+          </dl>
 
-          <div class="con__bank">
-            <p class="bank__tit">
+          <dl class="con__bank">
+            <dd class="bank__tit">
               계좌정보
-            </p>
-            <hr class="line">
-            <div class="bank__text-area">
+            </dd>
+            <dt class="bank__text-area">
               <p class="numer">국민 : 1234 - 12 - 1234</p>
               <p class="name">예금주:홍길동</p>
-            </div>
-          </div>
+            </dt>
+          </dl>
 
 
           <div class="con__sns">
             <p class="sns__tit">
               SMS
             </p>
-            <hr class="line">
             <div class="sns__icon">
               <i class="fab fa-facebook-f"></i>
               <i class="fab fa-instagram"></i>
@@ -486,8 +473,6 @@
           </div>
 
         </div>
-
-        <hr class="line">
 
         <div class="con__info">
           <b>회사명 : J.FARMER</b>
