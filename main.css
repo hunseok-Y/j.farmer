@@ -285,36 +285,59 @@ img {
 
 /* VISUAL */
 .visual {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   overflow: hidden;
 }
 
-.visual>.inner {
+.visual__inner {
   height: 573px;
   position: relative;
 }
 
-.visual .inner .visual__container {
+.visual .visual__banner {
   width: 200vw;
   height: auto;
   transition: all .5s;
+  border: 1px solid red;
+
 }
 
-.visual .inner .visual__container .visual__item {
+.visual .visual__banner .banner {
   width: 100vw;
   float: left;
+}
+
+.visual .visual__banner .banner .banner__image {
+  width: 1280px;
+  height: 563px;
   position: relative;
 }
 
-.visual .inner .visual__container .visual__item img {
-  width: 1280px;
-  height: 563px;
+.visual .visual__banner .banner .banner__text-area {
+  position: absolute;
+  top: 120px;
+  bottom: 0;
+  left: 120px;
 }
 
-.visual .inner .visual__container .visual__item .btn {
+.visual .visual__banner .banner .banner__text-area .title {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  line-height: 50px;
+  margin-bottom: 40px;
+}
+
+.visual .visual__banner .banner .banner__text-area .text {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-regular);
+  line-height: 30px;
+}
+
+.visual .visual__banner .banner .btn {
   position: absolute;
-  top: 395px;
+  bottom: 120px;
   left: 120px;
+
 }
 
 .visual .btn__container {
