@@ -1,7 +1,7 @@
 "use strict";
 
-const searchEl = document.querySelector(".search");
-const searchInputEl = searchEl.querySelector("input");
+const searchEl = document.querySelector(".header__search");
+const searchInputEl = searchEl.querySelector(".input");
 
 searchEl.addEventListener("click", () => {
   searchInputEl.focus();
