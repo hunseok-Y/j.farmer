@@ -22,14 +22,14 @@ searchInputEl.addEventListener("blur", () => {
 const visBtn1 = document.querySelector(".visual__btn-1");
 
 visBtn1.addEventListener("click", () => {
-  document.querySelector(".visual__container").style.transform =
-    "translate(0vw)";
+  document.querySelector(".visual__banner").style.transform =
+    "translate(100vw)";
 });
 
 const visBtn2 = document.querySelector(".visual__btn-2");
 
 visBtn2.addEventListener("click", () => {
-  document.querySelector(".visual__container").style.transform =
+  document.querySelector(".visual__banner").style.transform =
     "translate(-100vw)";
 });
 

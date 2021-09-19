@@ -46,6 +46,7 @@ li {
 a {
   text-decoration: none;
   color: var(--color-black);
+  cursor: pointer;
 }
 
 a:active {
@@ -257,6 +258,8 @@ img {
   width: 140px;
   height: 172px;
   background-color: var(--color-white);
+  border-radius: var(--border-radius);
+  box-shadow: 0 14px 20px rgb(0 0 0 / 10%);
   position: absolute;
   top: 45px;
   left: 0;
@@ -292,12 +295,14 @@ img {
 .visual__inner {
   height: 573px;
   position: relative;
+  overflow: hidden;
 }
 
 .visual .visual__banner {
   width: 200vw;
   height: auto;
-  transition: all .5s;
+  display: flex;
+  transition: transform .4s;
   border: 1px solid red;
 
 }
@@ -359,99 +364,86 @@ img {
   border: 1px solid var(--color-yellow);
 }
 
-/* ABOUT */
-.about .inner .main__text {
+/* SEASON */
+.season .season__title {
   width: 100%;
-  height: 225px;
-  display: block;
   position: relative;
 }
 
-.about h1 {
+.season .season__title .tit {
   font-size: var(--font-large);
-  font-weight: var(--weight-bold);
+  font-weight: var(--weight-medium);
 }
 
-.about p {
+.season .season__title .text {
   font-size: var(--font-medium);
   font-weight: var(--weight-regular);
   margin-top: 20px;
   line-height: 29px;
 }
 
-.about .inner .main__text .btn {
+.season .season__main .main__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.season .season__main .main__list .main__item {
+  position: relative;
+  margin-top: 40px;
+}
+
+.season .season__main .main__list .item__img-box {
+  width: 413px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.season .season__main .main__list .main__item .item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  text-align: center;
+  transition: all .4s;
+}
+
+.season .season__main .main__list .main__item .item__discroption {
+  width: 413px;
+  height: 113px;
   position: absolute;
   bottom: 0px;
   left: 0;
   right: 0;
-  margin: 0 auto;
-}
-
-.about .about__main {
-  margin-top: 70px;
-  position: relative;
-}
-
-.about .about__main .btn {
-  position: absolute;
-  top: 317px;
-  left: 120px;
-}
-
-.about .about__container {
-  display: flex;
-  justify-content: space-between;
-
-}
-
-.about .about__container .item {
-  width: 406px;
-  height: 460px;
-  margin-top: 4z0px;
-  position: relative;
-  overflow: hidden;
-}
-
-.about .about__container .item img {
-  height: 100%;
-  /* object-fit: cover 이미지가 커도 자동으로 맞춰줌*/
-  object-fit: cover;
-  position: relative;
-  transition: all .4s;
-}
-
-.about .about__container .item img:hover {
-  height: 480px;
-}
-
-.about .about__container .item .item__descriptiom {
-  width: 100%;
-  height: 118px;
-  position: absolute;
-  top: 342px;
-  left: 0;
-  right: 0;
-  background-color: var(--color-white);
+  background-color: var(--color-gray);
+  background-color: rgba(255, 255, 255, .8);
+  visibility: hidden;
   opacity: 0;
   transition: all .4s;
 }
 
-.about .about__container .item:hover .item__descriptiom {
-  height: 118px;
-  display: block;
-  opacity: 0.9;
-}
-
-.about .about__container .item .item__descriptiom .item__name {
-  font-size: var(--font-medium);
+.season .season__main .main__list .main__item .item__discroption .tit {
+  font-size: var(--font-regular);
   font-weight: var(--weight-medium);
-  padding: 20px 0;
+  margin: 20px 0;
 }
 
-.about .about__container .item .item__descriptiom .item__price {
+.season .season__main .main__list .main__item .item__discroption .price {
   font-size: var(--font-medium);
   font-weight: var(--weight-bold);
-  color: var(--color-blue);
+}
+
+.season .season__main .main__list .main__item:hover .item__discroption {
+  visibility: visible;
+  opacity: 1;
+}
+
+.season .season__main .main__list .main__item:hover .item-image {
+  width: 423px;
+  height: 410px;
+}
+
+/* ABOUT */
+.about .about__sale {
+  margin-top: 120px;
 }
 
 /* MD PICK */
