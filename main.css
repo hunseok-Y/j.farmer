@@ -267,7 +267,7 @@ img {
   left: 0;
   padding: 20px 20px;
   visibility: hidden;
-  z-index: 1;
+  z-index: 4;
   transition: all .4s;
   opacity: 0;
 }
@@ -290,28 +290,22 @@ img {
 
 /* VISUAL */
 .visual {
-  /* margin-top: 20px; */
-  overflow: hidden;
+  margin-top: 20px;
 }
 
 .visual__inner {
   height: 573px;
   position: relative;
-  overflow: hidden;
 }
 
 .visual .visual__banner {
   width: 200vw;
   height: auto;
-  display: flex;
-  transition: transform .4s;
-  border: 1px solid red;
-
 }
 
 .visual .visual__banner .banner {
   width: 100vw;
-  float: left;
+  transition: all .4s;
 }
 
 .visual .visual__banner .banner .banner__image {
@@ -334,37 +328,53 @@ img {
   margin-bottom: 40px;
 }
 
+.visual .visual__banner .banner .banner__text-area .title-whith {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  line-height: 50px;
+  margin-bottom: 40px;
+  color: var(--color-white);
+}
+
 .visual .visual__banner .banner .banner__text-area .text {
   font-size: var(--font-medium);
   font-weight: var(--weight-regular);
   line-height: 30px;
 }
 
+.visual .visual__banner .banner .banner__text-area .text-whith {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-regular);
+  line-height: 30px;
+  color: var(--color-white);
+}
+
 .visual .visual__banner .banner .btn {
   position: absolute;
   bottom: 120px;
   left: 120px;
-
 }
 
-.visual .btn__container {
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: var(--color-green);
+}
+
+.visual .visual__sub-btn {
   position: absolute;
   bottom: 40px;
-  left: 50%;
+  font-size: 30px;
 }
 
-.visual .btn__container button {
+.swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  padding: 5px;
-  border-radius: 50%;
-  border: 1px solid var(--color-white);
 }
 
-.visual .btn__container button:hover {
-  background-color: var(--color-yellow);
-  border: 1px solid var(--color-yellow);
+.swiper-pagination-bullet-active {
+  background-color: var(--color-green);
 }
+
 
 /* SEASON */
 .season .season__title {
@@ -405,7 +415,7 @@ img {
   height: 100%;
   object-fit: cover;
   text-align: center;
-  transition: all .4s;
+  transition: all .4s linear;
 }
 
 .season .season__main .main__list .main__item .item__discroption {
@@ -439,8 +449,7 @@ img {
 }
 
 .season .season__main .main__list .main__item:hover .item-image {
-  width: 423px;
-  height: 410px;
+  transform: scale(1.05);
 }
 
 /* ABOUT */

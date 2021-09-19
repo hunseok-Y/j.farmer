@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=\, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>J.FARMER</title>
   <link rel="icon" href="./image/J. FARMER.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,8 +13,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
 
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./main.css">
-  <script defer src="./main.js"></script>
+  <script type="module" defer src="./main.js"></script>
+
 </head>
 
 <body>
@@ -124,11 +126,13 @@
     <!-- VISUAL -->
     <section class="visual ">
 
-      <div class="visual__inner inner">
+      <!-- Slider main container -->
+      <div class="swiper visual__inner inner">
 
-        <ul class="visual__banner">
+        <div class="swiper-wrapper visual__banner">
+          <!-- Slides -->
+          <div class="swiper-slide banner">
 
-          <li class="banner">
             <a href="/"><img src="./image/mealkit.jpg" alt="메엔 베너 mealKit" class="banner__image"></a>
             <div class="banner__text-area">
               <h1 class="title">제주의 맛집을 이제는<br>
@@ -136,26 +140,33 @@
               <p class="text">제주에서만 먹을 수 있는 메뉴를<br>
                 이제는 밀키트로 집에서도 느껴보세요!</p>
             </div>
-            <a class="btn btn--black">자세히 보기</a>
-          </li>
 
-          <li class="banner">
+            <a class="btn btn--black">자세히 보기</a>
+
+          </div>
+
+          <div class="swiper-slide banner">
+
             <a href="/"><img src="./image/pork.jpg" alt="메엔 베너 mealKit" class="banner__image"></a>
             <div class="banner__text-area">
-              <h1 class="title">제주의 맛집을 이제는<br>
-                집에서 느껴보세요</h1>
-              <p class="text">제주에서만 먹을 수 있는 메뉴를<br>
+              <h1 class="title-whith">돼지고기 왕중의 왕!<br>
+                제주 흑돼지의 맛에 빠져보세요</h1>
+              <p class="text-whith">제주에서만 먹을 수 있는 메뉴를<br>
                 이제는 밀키트로 집에서도 느껴보세요!</p>
             </div>
-            <a class="btn btn--black">자세히 보기</a>
-          </li>
+            <a class="btn btn--white">자세히 보기</a>
+          </div>
 
-        </ul>
-
-        <div class="btn__container">
-          <button type="button" class="visBtn visual__btn-1"></button>
-          <button type="button" class="visBtn visual__btn-2"></button>
         </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="visual-btn__container">
+          <div class="swiper-button-prev btn-prev"></div>
+          <div class="swiper-button-next btn-next"></div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination visual__sub-btn"></div>
+        </div>
+
       </div>
 
     </section>
