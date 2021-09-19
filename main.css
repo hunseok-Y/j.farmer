@@ -4,8 +4,10 @@
   --color-white: #FFF;
   --color-black: #333;
   --color-yellow: #FFC301;
-  --color-gray: #E7E7E7;
+  --color-lightGray: #E7E7E7;
+  --color-gray: #C2C2C2;
   --color-blue: #63A4FF;
+  --color-green: #378842;
   /* font size */
   --font-large: 4rem;
   --font-medium: 2rem;
@@ -444,6 +446,99 @@ img {
 /* ABOUT */
 .about .about__sale {
   margin-top: 120px;
+  display: flex;
+  position: relative;
+}
+
+.about .about__sale .sale__text-arear .tit {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  margin-bottom: 40px;
+}
+
+.about .about__sale .sale__text-arear .tit::after {
+  content: "";
+  display: block;
+  width: 120px;
+  margin-top: 40px;
+  border-bottom: 1px solid var(--color-black);
+}
+
+.about .about__sale .sale__text-arear .text {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-regular);
+}
+
+.about .about__sale .sale__list {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.about .about__sale .sale__list .sale__item {
+  width: 407px;
+  height: 590px;
+  margin-left: 20px;
+}
+
+.about .about__sale .sale__list .sale__item .item__img .item--image {
+  width: 100%;
+  height: 452px;
+  object-fit: cover;
+  text-align: center;
+  position: relative;
+}
+
+.about .about__sale .sale__list .sale__item .item__time {
+  width: 407px;
+  height: 69px;
+  position: absolute;
+  top: 383px;
+  background-color: var(--color-green);
+}
+
+.about .about__sale .sale__list .sale__item .item__time .time {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-bold);
+  text-align: center;
+  padding: 20px 0;
+  color: var(--color-white);
+}
+
+.about .about__sale .sale__list .sale__item .item__title {
+  padding: 20px 0;
+}
+
+.about .about__sale .sale__list .sale__item .item__title .tit {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-medium);
+}
+
+.about .about__sale .sale__list .sale__item .item__text-arear {
+  display: flex;
+  line-height: 30px;
+}
+
+.about .about__sale .sale__list .sale__item .item__text-arear .percent {
+  color: #EE4646;
+  font-size: var(--font-medium);
+  font-weight: var(--weight-bold);
+  margin-right: 10px;
+}
+
+.about .about__sale .sale__list .sale__item .item__text-arear .price {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-bold);
+  margin-right: 10px;
+}
+
+.about .about__sale .sale__list .sale__item .item__text-arear .discount {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-medium);
+  margin-right: 10px;
+  text-decoration: line-through;
+  color: var(--color-gray);
 }
 
 /* MD PICK */
