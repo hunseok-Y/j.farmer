@@ -40,3 +40,19 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+const mdpick = new Swiper(".mealkit__swiper", {
+  slidesPerView: 4,
+  spaceBetween: 40,
+  speed: 1500,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

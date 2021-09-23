@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
 
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./main.css">
   <script type="module" defer src="./main.js"></script>
 
@@ -253,7 +254,9 @@
             <li class="sale__item">
 
               <div class="item__img">
-                <img src="./image/sale__고구마.jpg" alt="sale__고구마" class="item--image">
+                <a href="#">
+                  <img src="./image/sale__고구마.jpg" alt="sale__고구마" class="item--image">
+                </a>
               </div>
 
               <div class="item__time">
@@ -261,13 +264,13 @@
               </div>
 
               <div class="item__title">
-                <span class="tit">제주 한림읍 비트</span>
+                <span class="tit"><a href="#" class="sale__link">제주 고구마</a></span>
               </div>
 
               <div class="item__text-arear">
-                <span class="percent">50%</span>
-                <span class="price">15,000 </span>
-                <span class="discount">30,000</span>
+                <span class="percent"><a href="#" class="sale__link percent">50%</a></span>
+                <span class="price"><a href="#" class="sale__link">15,000</a></span>
+                <span class="discount"><a href="#" class="sale__link">30,000</a></span>
               </div>
 
             </li>
@@ -275,7 +278,9 @@
             <li class="sale__item">
 
               <div class="item__img">
-                <img src="./image/sale__한라봉.jpg" alt="sale__한라봉" class="item--image">
+                <a href="#">
+                  <img src="./image/sale__한라봉.jpg" alt="sale__한라봉" class="item--image">
+                </a>
               </div>
 
               <div class="item__time">
@@ -283,13 +288,13 @@
               </div>
 
               <div class="item__title">
-                <span class="tit">제주 한림읍 비트</span>
+                <span class="tit"><a href="#" class="sale__link">제주 서귀포 한라봉</a></span>
               </div>
 
               <div class="item__text-arear">
-                <span class="percent">50%</span>
-                <span class="price">15,000 </span>
-                <span class="discount">30,000</span>
+                <span class="percent"><a href="#" class="sale__link percent">50%</a></span>
+                <span class="price"><a href="#" class="sale__link">15,000</a></span>
+                <span class="discount"><a href="#" class="sale__link discount">30,000</a></span>
               </div>
 
             </li>
@@ -334,8 +339,9 @@
 
           <li class="product">
             <div class="product__img-box">
-              <a href="" class="product__link" target="blank" data-type="농산물">
+              <a href="#" class="product__link" target="blank" data-type="농산물">
                 <img src="./image/md-pick__수박.jpg.crdownload" alt="수박_img" class="product__image">
+              </a>
             </div>
 
             <p class="product__percent">10%</p>
@@ -350,8 +356,9 @@
 
           <li class="product">
             <div class="product__img-box">
-              <a href="" class="product__link" target="blank" data-type="농산물">
+              <a href="#" class="product__link" target="blank" data-type="농산물">
                 <img src="./image/md-pick__레몬.jpg" alt="레몬_img" class="product__image">
+              </a>
             </div>
 
             <div class="product__percent">10%</div>
@@ -366,8 +373,9 @@
 
           <li class="product">
             <div class="product__img-box">
-              <a href="" class="product__link" target="blank" data-type="농산물">
+              <a href="#" class="product__link" target="blank" data-type="농산물">
                 <img src="./image/md-pick__한라봉.jpg" alt="한라봉_img" class="product__image">
+              </a>
             </div>
 
             <div class="product__percent">10%</div>
@@ -382,8 +390,9 @@
 
           <li class="product">
             <div class="product__img-box">
-              <a href="" class="product__link" target="blank" data-type="농산물">
+              <a href="#" class="product__link" target="blank" data-type="농산물">
                 <img src="./image/md-pick__비트.jpg" alt="비트_img" class="product__image">
+              </a>
             </div>
 
             <div class="product__percent">10%</div>
@@ -403,7 +412,7 @@
     </section>
 
     <!-- BRAND ALL -->
-    <!-- <section class="brand">
+    <section class="brand">
 
       <div class="inner">
         <div class="brand__title">
@@ -414,21 +423,127 @@
         </div>
       </div>
 
-    </section> -->
+    </section>
 
     <!-- MEAL KIT -->
-    <!-- <section class="mealkit">
+    <section class="mealkit">
 
       <div class="inner">
+
         <div class="mealkit__title">
           <h1 class="tit">제주 맛집을 품다</h1>
           <p class="text">제주도에서만 먹을 수 있었던 맛집을 이젠 밀키트로<br>
             가정에서 느껴보세요.</p>
-          <a href="#" class="mealkit__link btn btn--white">자세히 보기</a>
+          <a href="#" class="mealkit__link btn btn--black">자세히 보기</a>
         </div>
+
+        <div class="swiper mySwiper mealkit__swiper">
+
+          <div class="swiper-wrapper swiper__container">
+
+            <div class="swiper-slide container__item">
+              <ul class="item__list">
+
+                <li class="list">
+                  <a href="#" class="meal-kit__link item"><img src="./image/mealkit/meal kit__해장국.jpg" alt="해장국"
+                      class="item-image"></a>
+                  <h1 class="title">은희네 해장국</h1>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="swiper-slide container__item">
+              <ul class="item__list">
+
+                <li class="list">
+                  <a href="#" class="meal-kit__link item"><img src="./image/mealkit/meal kit__국수.jpg" alt="국수"
+                      class="item-image"></a>
+                  <h1 class="title">남매국수</h1>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="swiper-slide container__item">
+              <ul class="item__list">
+
+                <li class="list">
+                  <a href="#" class="meal-kit__link item"><img src="./image/mealkit/meal kit__뚝배기.jpg" alt="뚝배기"
+                      class="item-image"></a>
+                  <h1 class="title">해물뚝배기</h1>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="swiper-slide container__item">
+              <ul class="item__list">
+
+                <li class="list">
+                  <a href="#" class="meal-kit__link item"><img src="./image/mealkit/meal kit__해물탕.jpg" alt="심성혈 해물탕"
+                      class="item-image"></a>
+                  <h1 class="title">삼성혈 해물탕</h1>
+                </li>
+
+              </ul>
+            </div>
+
+             <div class="swiper-slide container__item">
+              <ul class="item__list">
+
+                <li class="list">
+                  <a href="#" class="meal-kit__link item"><img src="./image/mealkit/meal kit__갈치초림.jpg" alt="네거리 식당"
+                      class="item-image"></a>
+                  <h1 class="title">네거리 식당</h1>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="swiper-slide container__item">
+              <ul class="item__list">
+
+                <li class="list">
+                  <a href="#" class="meal-kit__link item"><img src="./image/mealkit/meal kit__흑돼지.jpg" alt="돔베돔"
+                      class="item-image"></a>
+                  <h1 class="title">돔배돔</h1>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="swiper-slide container__item">
+              <ul class="item__list">
+
+                <li class="list">
+                  <a href="#" class="meal-kit__link item"><img src="./image/mealkit/meal kit__멜조림.jpg" alt="멜조림"
+                      class="item-image"></a>
+                  <h1 class="title">솔지식당</h1>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="swiper-slide container__item">
+              <ul class="item__list">
+
+                <li class="list">
+                  <a href="#" class="meal-kit__link item"><img src="./image/mealkit/meal kit__영실식당.jpg" alt="영실식당"
+                      class="item-image"></a>
+                  <h1 class="title">영실식당</h1>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
       </div>
 
-    </section> -->
+    </section>
 
     <!-- REVIEW -->
     <!-- <section class="review">
