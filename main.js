@@ -19,7 +19,7 @@ searchInputEl.addEventListener("blur", () => {
 });
 
 // swiper js 코드
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".visual__inner", {
   // Optional parameters
   // direction: "vertical",
   loop: true,
