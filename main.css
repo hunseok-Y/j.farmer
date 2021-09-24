@@ -427,17 +427,18 @@ img {
   visibility: hidden;
   opacity: 0;
   transition: all .4s;
+  padding: 20px 0;
 }
 
 .season .season__main .main__list .main__item .item__discroption .tit {
   font-size: var(--font-regular);
   font-weight: var(--weight-medium);
-  margin: 20px 0;
 }
 
 .season .season__main .main__list .main__item .item__discroption .price {
   font-size: var(--font-medium);
   font-weight: var(--weight-bold);
+  margin-top: 20px;
 }
 
 .season .season__main .main__list .main__item:hover .item__discroption {
@@ -514,7 +515,7 @@ img {
   font-size: var(--font-medium);
   font-weight: var(--weight-bold);
   text-align: center;
-  padding: 20px 0;
+  line-height: 69px;
   color: var(--color-white);
 }
 
@@ -653,7 +654,7 @@ img {
   font-weight: var(--weight-bold);
   background-color: var(--color-red);
   text-align: center;
-  padding: 16px 10px;
+  line-height: 60px;
   color: var(--color-white);
   border-radius: 0 10px 0 10px;
 }
@@ -666,24 +667,23 @@ img {
 .md-pick .md-pick__product .product .product__description .name {
   font-size: var(--font-regular);
   font-weight: var(--weight-medium);
-  position: absolute;
-  bottom: 118px;
+  text-align: left;
 }
 
 .md-pick .md-pick__product .product .product__description .price {
   font-size: var(--font-medium);
   font-weight: var(--weight-bold);
-  position: absolute;
-  bottom: 69px;
+  text-align: left;
+  margin-top: 20px;
 }
 
 .md-pick .md-pick__product .product .product__description .discount {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
   text-decoration: line-through;
-  position: absolute;
+  text-align: left;
+  margin-top: 20px;
   color: var(--color-gray);
-  bottom: 20px;
 }
 
 /* BRAND ALL */

@@ -22,7 +22,7 @@ searchInputEl.addEventListener("blur", () => {
 const swiper = new Swiper(".visual__inner", {
   // Optional parameters
   // direction: "vertical",
-  loop: true,
+  // loop: true,
   speed: 1500,
   autoplay: {
     delay: 2000,
