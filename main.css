@@ -803,6 +803,7 @@ img {
 .review .review__groups .review__group .group__item .item-image {
   width: 305px;
   height: 284px;
+  object-fit: cover;
 }
 
 /* FOOTER */
