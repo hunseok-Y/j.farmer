@@ -925,6 +925,7 @@ footer .con__info::before {
   font-size: 16px;
   text-align: center;
   transition: all .4s;
+  border-radius: 50%;
 }
 
 .topup .visible {
