@@ -41,7 +41,7 @@ const swiper = new Swiper(".visual__inner", {
   },
 });
 
-const mdpick = new Swiper(".mealkit__swiper", {
+new Swiper(".mealkit__swiper", {
   slidesPerView: 4,
   spaceBetween: 40,
   speed: 1500,
@@ -56,3 +56,34 @@ const mdpick = new Swiper(".mealkit__swiper", {
     clickable: true,
   },
 });
+
+window.addEventListener("scroll", () => {
+  // 1. 클래스명을 가지고 와야함
+  const header = document.querySelector(".header");
+  const fixedNav = document.querySelector(".header__nav");
+
+  // 2. 어느정도 스크롤이 됬을 때 탑에 붙힘
+  const scrollY = window.scrollY;
+  const headerHeight = header.getBoundingClientRect().height;
+
+  if (scrollY > headerHeight) {
+    fixedNav.classList.add("is-fixed");
+  } else {
+    fixedNav.classList.remove("is-fixed");
+  }
+
+  // 3. 다시 맨위로 올라갔을때 원래 위치에 돌아옴
+});
+
+const topButton = document.querySelector(".topup");
+// top 버튼을 클릭 한다.
+topButton.addEventListener("click", () => {
+  // 최상단으로 이동한다.
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+// AOS
+AOS.init();

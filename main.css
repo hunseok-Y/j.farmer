@@ -120,7 +120,6 @@ img {
 }
 
 .header>.inner {
-  height: 243px;
   position: relative;
 }
 
@@ -233,6 +232,22 @@ img {
 
 .header__search .header__search--input.focused {
   opacity: 0;
+}
+
+.header__nav.is-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-white);
+  padding: 40px 0;
+  z-index: 999;
+  transition: all .2s;
+}
+
+.header__nav.is-fixed .nav {
+  width: 1280px;
+  margin-top: 0;
 }
 
 .header__nav .nav {
@@ -399,11 +414,13 @@ img {
 .season .season__main .main__list .main__item {
   position: relative;
   margin-top: 40px;
+  width: 413px;
+  height: 400px;
 }
 
 .season .season__main .main__list .item__img-box {
-  width: 413px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -416,8 +433,8 @@ img {
 }
 
 .season .season__main .main__list .main__item .item__discroption {
-  width: 413px;
-  height: 113px;
+  width: 100%;
+  /* height: 113px; */
   position: absolute;
   bottom: 0px;
   left: 0;
@@ -433,11 +450,13 @@ img {
 .season .season__main .main__list .main__item .item__discroption .tit {
   font-size: var(--font-regular);
   font-weight: var(--weight-medium);
+  line-height: 24px;
 }
 
 .season .season__main .main__list .main__item .item__discroption .price {
   font-size: var(--font-medium);
   font-weight: var(--weight-bold);
+  line-height: 29px;
   margin-top: 20px;
 }
 

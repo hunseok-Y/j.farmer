@@ -15,8 +15,10 @@
 
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./main.css">
   <script type="module" defer src="./main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
@@ -54,72 +56,74 @@
         </div>
       </div>
 
-      <div class="header__nav">
-
-        <ul class="nav">
-          <li class="nav__item">
-            <div class="nav__name">
-              <h4><a href="/" class="maintitle">농산물</a></h4>
-            </div>
-            <ul class="nav__content">
-              <li><a href="/" class="subtitle">과일</a></li>
-              <li><a href="/" class="subtitle">채소</a></li>
-              <li><a href="/" class="subtitle">잡곡류</a></li>
-              <li><a href="/" class="subtitle">견과류</a></li>
-            </ul>
-          </li>
-
-          <li class="nav__item">
-            <div class="nav__name">
-              <h4><a href="/" class="maintitle">수산물</a></h4>
-            </div>
-            <ul class="nav__content">
-              <li><a href="/" class="subtitle">해산물</a></li>
-              <li><a href="/" class="subtitle">생선</a></li>
-              <li><a href="/" class="subtitle">건어물</a></li>
-              <li><a href="/" class="subtitle">김/해초</a></li>
-            </ul>
-          </li>
-
-          <li class="nav__item">
-            <div class="nav__name">
-              <h4><a href="/" class="maintitle">축산물</a></h4>
-            </div>
-            <ul class="nav__content">
-              <li><a href="/" class="subtitle">돼지고기</a></li>
-              <li><a href="/" class="subtitle">소고기</a></li>
-              <li><a href="/" class="subtitle">닭고기</a></li>
-            </ul>
-          </li>
-
-          <li class="nav__item">
-            <div class="nav__name">
-              <h4><a href="/" class="maintitle">밀키트</a></h4>
-            </div>
-          </li>
-
-          <li class="nav__item">
-            <div class="nav__name">
-              <h4><a href="/" class="maintitle">공지사항</a></h4>
-            </div>
-          </li>
-
-          <li class="nav__item">
-            <div class="nav__name">
-              <h4><a href="/" class="maintitle">커뮤니티</a></h4>
-            </div>
-            <ul class="nav__content">
-              <li><a href="/" class="subtitle">후기</a></li>
-              <li><a href="/" class="subtitle">Q&A</a></li>
-              <li><a href="/" class="subtitle">이벤트</a></li>
-            </ul>
-          </li>
-        </ul>
-
-      </div>
-
     </div>
   </header>
+
+  <!-- NAV -->
+
+  <div class="header__nav">
+    <div class="inner">
+      <ul class=" nav">
+        <li class="nav__item">
+          <div class="nav__name">
+            <h4><a href="/" class="maintitle">농산물</a></h4>
+          </div>
+          <ul class="nav__content">
+            <li><a href="/" class="subtitle">과일</a></li>
+            <li><a href="/" class="subtitle">채소</a></li>
+            <li><a href="/" class="subtitle">잡곡류</a></li>
+            <li><a href="/" class="subtitle">견과류</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <div class="nav__name">
+            <h4><a href="/" class="maintitle">수산물</a></h4>
+          </div>
+          <ul class="nav__content">
+            <li><a href="/" class="subtitle">해산물</a></li>
+            <li><a href="/" class="subtitle">생선</a></li>
+            <li><a href="/" class="subtitle">건어물</a></li>
+            <li><a href="/" class="subtitle">김/해초</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <div class="nav__name">
+            <h4><a href="/" class="maintitle">축산물</a></h4>
+          </div>
+          <ul class="nav__content">
+            <li><a href="/" class="subtitle">돼지고기</a></li>
+            <li><a href="/" class="subtitle">소고기</a></li>
+            <li><a href="/" class="subtitle">닭고기</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <div class="nav__name">
+            <h4><a href="/" class="maintitle">밀키트</a></h4>
+          </div>
+        </li>
+
+        <li class="nav__item">
+          <div class="nav__name">
+            <h4><a href="/" class="maintitle">공지사항</a></h4>
+          </div>
+        </li>
+
+        <li class="nav__item">
+          <div class="nav__name">
+            <h4><a href="/" class="maintitle">커뮤니티</a></h4>
+          </div>
+          <ul class="nav__content">
+            <li><a href="/" class="subtitle">후기</a></li>
+            <li><a href="/" class="subtitle">Q&A</a></li>
+            <li><a href="/" class="subtitle">이벤트</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 
   <!-- MAIN -->
   <main>
@@ -179,7 +183,8 @@
 
       <div class="inner">
 
-        <div class="season__title">
+        <div class="season__title" data-aos="fade-up" data-aos-offset= "200" data-aos-easing= "ease-in-sine"
+        data-aos-duration= ".5s">
           <h1 class="tit"><a href="/" class="season-link">이달의 제철상품</a></h1>
           <p class="text"><a class="season-link">신선하고 맛있는 제철상품을 확인하세요!</a></p>
         </div>
@@ -188,7 +193,8 @@
 
           <ul class="main__list">
 
-            <li class="main__item">
+            <li class="main__item" data-aos="fade-up" data-aos-offset= "200" data-aos-easing= "ease-in-sine"
+            data-aos-duration= ".5s">
               <a href="#" class="item__link">
 
                 <div class="item__img-box">
@@ -202,7 +208,8 @@
               </a>
             </li>
 
-            <li class="main__item">
+            <li class="main__item" data-aos="fade-up" data-aos-offset= "200" data-aos-easing= "ease-in-sine"
+            data-aos-duration= ".5s">
               <a href="#" class="item__link">
 
                 <div class="item__img-box">
@@ -216,7 +223,8 @@
               </a>
             </li>
 
-            <li class="main__item">
+            <li class="main__item" data-aos="fade-up" data-aos-offset= "200" data-aos-easing= "ease-in-sine"
+            data-aos-duration= ".5s">
               <a href="#" class="item__link">
 
                 <div class="item__img-box">
@@ -245,12 +253,14 @@
 
         <div class="about__sale">
 
-          <div class="sale__text-arear">
+          <div class="sale__text-arear" data-aos="fade-right" data-aos-offset= "350" data-aos-easing= "ease-in-sine"
+          data-aos-duration= ".4s">
             <h1 class="tit">오늘의 특가</h1>
             <p class="text">오늘만 이가격으로 판매합니다!</p>
           </div>
 
-          <ul class="sale__list">
+          <ul class="sale__list" data-aos="fade-left" data-aos-offset= "350" data-aos-easing= "ease-in-sine"
+          data-aos-duration= ".4s">
 
             <li class="sale__item">
 
@@ -312,13 +322,15 @@
     <section class="md-pick">
 
       <div class="inner">
-        <div class="md-pick__title">
+        <div class="md-pick__title" data-aos="fade-up" data-aos-offset= "120" data-aos-easing= "ease-in-sine"
+        data-aos-duration= ".5s">
           <h1 class="tit">MD PICK</h1>
           <P class="text">J. FARMER가 추천하는 상품을<br>
             만나보세요</P>
         </div>
 
-        <div class="md-pick__category">
+        <div class="md-pick__category" data-aos="fade-up" data-aos-offset= "120" data-aos-easing= "ease-in-sine"
+        data-aos-duration= ".5s">
           <button class="category__btn selected" data-filter="농산물">
             농산물
           </button>
@@ -338,8 +350,9 @@
 
         <ul class="md-pick__product">
 
-          <li class="product">
-            <div class="product__img-box">
+          <li class="product" data-aos="fade-up" data-aos-offset= "200" data-aos-easing= "ease-in-sine"
+          data-aos-duration= ".5s">
+            <div class="product__img-box" >
               <a href="#" class="product__link" target="blank" data-type="농산물">
                 <img src="./image/mdpick/md-pick__수박.jpg" alt="수박_img" class="product__image">
               </a>
@@ -355,7 +368,8 @@
             </a>
           </li>
 
-          <li class="product">
+          <li class="product" data-aos="fade-up" data-aos-offset= "200" data-aos-easing= "ease-in-sine"
+          data-aos-duration= ".5s">
             <div class="product__img-box">
               <a href="#" class="product__link" target="blank" data-type="농산물">
                 <img src="./image/mdpick/md-pick__레몬.jpg" alt="레몬_img" class="product__image">
@@ -372,7 +386,8 @@
             </a>
           </li>
 
-          <li class="product">
+          <li class="product" data-aos="fade-up" data-aos-offset= "200" data-aos-easing= "ease-in-sine"
+          data-aos-duration= ".5s">
             <div class="product__img-box">
               <a href="#" class="product__link" target="blank" data-type="농산물">
                 <img src="./image/mdpick/md-pick__한라봉.jpg" alt="한라봉_img" class="product__image">
@@ -389,7 +404,8 @@
             </a>
           </li>
 
-          <li class="product">
+          <li class="product" data-aos="fade-up" data-aos-offset= "200" data-aos-easing= "ease-in-sine"
+          data-aos-duration= ".5s">
             <div class="product__img-box">
               <a href="#" class="product__link" target="blank" data-type="농산물">
                 <img src="./image/mdpick/md-pick__비트.jpg" alt="비트_img" class="product__image">
@@ -416,7 +432,8 @@
     <section class="brand">
 
       <div class="inner">
-        <div class="brand__title">
+        <div class="brand__title" data-aos="zoom-in" data-aos-offset="160" data-aos-easing= "ease-in-sine"
+        data-aos-duration= ".4s">
           <h1 class="tit">J. farmer</h1>
           <p class="text">저희는 제주에서 살고있는 모든 농민들의<br>
             노고를 올바르게 전달하는 회사입니다. </p>
@@ -431,14 +448,16 @@
 
       <div class="inner">
 
-        <div class="mealkit__title">
+        <div class="mealkit__title" data-aos="fade-up" data-aos-offset= "200" data-aos-easing= "ease-in-sine"
+        data-aos-duration= ".5s">
           <h1 class="tit">제주 맛집을 품다</h1>
           <p class="text">제주도에서만 먹을 수 있었던 맛집을 이젠 밀키트로<br>
             가정에서 느껴보세요.</p>
           <a href="#" class="mealkit__link btn btn--black">자세히 보기</a>
         </div>
 
-        <div class="swiper mySwiper mealkit__swiper">
+        <div class="swiper mySwiper mealkit__swiper" data-aos="fade-up" data-aos-offset= "200" data-aos-easing= "ease-in-sine"
+        data-aos-duration= ".5s">
 
           <div class="swiper-wrapper swiper__container">
 
@@ -549,7 +568,9 @@
     <!-- REVIEW -->
     <section class="review">
 
-      <div class="inner">
+      <div class="inner"  data-aos="fade-up"
+      data-aos-offset="200" data-aos-easing= "ease-in-sine"
+      data-aos-duration= ".4s">
 
         <div class="review__text-arear">
           <h1 class="tit">REVIEW</h1>
@@ -653,11 +674,10 @@
       </div>
 
     </footer>
-
     <!-- ARROW UP -->
-    <!-- <button class="topup">
+    <button class="topup">
       <i class="fas fa-arrow-up"> TOP</i>
-    </button> -->
+    </button>
 
 </body>
 
