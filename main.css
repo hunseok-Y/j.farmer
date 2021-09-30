@@ -917,17 +917,21 @@ footer .con__info::before {
 /* ARROW UP */
 .topup {
   position: fixed;
-  bottom: 50%;
-  right: 40px;
+  bottom: 120px;
+  right: 120px;
   width: 60px;
   height: 60px;
   border: none;
+  background-color: var(--color-green);
   font-size: 16px;
   text-align: center;
   transition: all .4s;
   border-radius: 50%;
+  color: var(--color-white);
+  visibility: hidden;
+  cursor: pointer;
 }
 
-.topup .visible {
-  pointer-events: auto;
+.topup.on {
+  visibility: visible;
 }

@@ -76,8 +76,19 @@ window.addEventListener("scroll", () => {
 });
 
 const topButton = document.querySelector(".topup");
+
+// 일정 스크롤시 버튼이 보이게하거나 숨기기
+window.addEventListener("scroll", () => {
+  if (scrollY > 500) {
+    topButton.classList.add("on");
+  } else {
+    topButton.classList.remove("on");
+  }
+});
+
 // top 버튼을 클릭 한다.
-topButton.addEventListener("click", () => {
+topButton.addEventListener("click", (e) => {
+  e.preventDefault();
   // 최상단으로 이동한다.
   window.scrollTo({
     top: 0,
